@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to bottom, #d4edea, #ffffff);
+  min-height: 100vh;
+}
+main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+button {
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.active-btn {
+  background-color: rgb(4, 162, 109);
+  color: white;
+}
+.monthly-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.annually-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.package {
+  background-color: white;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.pricing-packages {
+  display: flex;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.features p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+svg {
+  width: 20px;
+  height: 20px;
+  color: rgb(4, 162, 109);
+}
+.price {
+  font-size: 3.3rem;
+  font-weight: bolder;
+  color: rgb(33, 33, 33);
+}
+.package button {
+  background-color: white;
+  border: 1px solid gray;
+}
+.recommended {
+  border: 1px solid rgb(4, 162, 109);
+}
+.recommended button {
+  background-color: rgb(4, 162, 109);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.highlighted {
+  background-color: orange;
+  padding: 0.3rem 1rem;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+}
+.coins {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 2rem;
+  padding: 5rem;
+}
+.coin {
+  text-decoration: none;
+}
